@@ -1,0 +1,94 @@
+[
+  {
+    "file_path": "src/conditional.py",
+    "type": "import",
+    "content": "import ujson as json",
+    "metadata": {
+      "end_line": "2",
+      "name": "import ujson as json",
+      "start_line": "2"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "import",
+    "content": "import json",
+    "metadata": {
+      "end_line": "4",
+      "name": "import json",
+      "start_line": "4"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "import",
+    "content": "from foo import Bar",
+    "metadata": {
+      "end_line": "7",
+      "name": "from foo import Bar",
+      "start_line": "7"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "class",
+    "content": "class Proto:",
+    "metadata": {
+      "end_line": "9",
+      "fqn": "Proto",
+      "name": "Proto",
+      "start_line": "9"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "method",
+    "content": "def run(self): ...",
+    "metadata": {
+      "end_line": "10",
+      "fqn": "Proto.run",
+      "name": "run",
+      "params": "(self)",
+      "receiver": "Proto",
+      "signature": "def run(self)",
+      "start_line": "10"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "function",
+    "content": "def shim():\n        pass",
+    "metadata": {
+      "end_line": "13",
+      "fqn": "shim",
+      "name": "shim",
+      "params": "()",
+      "signature": "def shim()",
+      "start_line": "12"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "variable",
+    "content": "x = 1",
+    "metadata": {
+      "end_line": "15",
+      "fqn": "x",
+      "name": "x",
+      "start_line": "15"
+    }
+  },
+  {
+    "file_path": "src/conditional.py",
+    "type": "function",
+    "content": "def after():\n    pass",
+    "metadata": {
+      "end_line": "17",
+      "fqn": "after",
+      "name": "after",
+      "params": "()",
+      "signature": "def after()",
+      "start_line": "16"
+    }
+  }
+]

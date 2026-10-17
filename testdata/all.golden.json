@@ -1,0 +1,224 @@
+[
+  {
+    "file_path": "src/all.py",
+    "type": "statement",
+    "content": "\"\"\"Module docstring.\"\"\"",
+    "metadata": {
+      "end_line": "1",
+      "name": "statements",
+      "start_line": "1"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "import",
+    "content": "from __future__ import annotations",
+    "metadata": {
+      "end_line": "2",
+      "name": "from __future__ import annotations",
+      "start_line": "2"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "import",
+    "content": "import os, sys",
+    "metadata": {
+      "end_line": "4",
+      "name": "import os, sys",
+      "start_line": "4"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "import",
+    "content": "from typing import TYPE_CHECKING, Optional",
+    "metadata": {
+      "end_line": "5",
+      "name": "from typing import TYPE_CHECKING, Optional",
+      "start_line": "5"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "constant",
+    "content": "MAX_RETRIES: int = 3",
+    "metadata": {
+      "end_line": "7",
+      "fqn": "MAX_RETRIES",
+      "name": "MAX_RETRIES",
+      "start_line": "7",
+      "type": "int"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "variable",
+    "content": "default_name = \"demo\"",
+    "metadata": {
+      "end_line": "8",
+      "fqn": "default_name",
+      "name": "default_name",
+      "start_line": "8"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "type",
+    "content": "type Alias = list[int]",
+    "metadata": {
+      "end_line": "10",
+      "name": "Alias",
+      "start_line": "10"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "class",
+    "content": "# Describes the service.\n@dataclass(frozen=True)\nclass Service(Base, metaclass=Meta):\n    \"\"\"Service docstring.\"\"\"",
+    "metadata": {
+      "decorators": "@dataclass(frozen=True)",
+      "end_line": "15",
+      "extends": "Base, metaclass=Meta",
+      "fqn": "Service",
+      "name": "Service",
+      "start_line": "12"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "property",
+    "content": "TIMEOUT = 30",
+    "metadata": {
+      "end_line": "17",
+      "fqn": "Service.TIMEOUT",
+      "name": "TIMEOUT",
+      "receiver": "Service",
+      "start_line": "17"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "property",
+    "content": "name: str = \"svc\"",
+    "metadata": {
+      "end_line": "18",
+      "fqn": "Service.name",
+      "name": "name",
+      "receiver": "Service",
+      "start_line": "18",
+      "type": "str"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "class",
+    "content": "class Inner:",
+    "metadata": {
+      "end_line": "20",
+      "fqn": "Service.Inner",
+      "name": "Inner",
+      "receiver": "Service",
+      "start_line": "20"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "method",
+    "content": "def ping(self):\n            return 1",
+    "metadata": {
+      "end_line": "22",
+      "fqn": "Service.Inner.ping",
+      "name": "ping",
+      "params": "(self)",
+      "receiver": "Service.Inner",
+      "signature": "def ping(self)",
+      "start_line": "21"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "method",
+    "content": "def __init__(self, name: str) -\u003e None:\n        self.name = name",
+    "metadata": {
+      "end_line": "25",
+      "fqn": "Service.__init__",
+      "name": "__init__",
+      "params": "(self, name: str)",
+      "receiver": "Service",
+      "return_type": "None",
+      "signature": "def __init__(self, name: str) -\u003e None",
+      "start_line": "24"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "method",
+    "content": "@staticmethod\n    def make() -\u003e \"Service\":\n        return Service(\"x\")",
+    "metadata": {
+      "decorators": "@staticmethod",
+      "end_line": "29",
+      "fqn": "Service.make",
+      "name": "make",
+      "params": "()",
+      "receiver": "Service",
+      "return_type": "\"Service\"",
+      "signature": "def make() -\u003e \"Service\"",
+      "start_line": "27"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "method",
+    "content": "async def fetch(self, url: str) -\u003e bytes:  # trailing comment\n        def helper():\n            return url\n        return helper()",
+    "metadata": {
+      "end_line": "34",
+      "fqn": "Service.fetch",
+      "modifiers": "async",
+      "name": "fetch",
+      "params": "(self, url: str)",
+      "receiver": "Service",
+      "return_type": "bytes",
+      "signature": "async def fetch(self, url: str) -\u003e bytes",
+      "start_line": "31"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "function",
+    "content": "def helper(a, b=2, *args, **kwargs):\n    return a + b",
+    "metadata": {
+      "end_line": "38",
+      "fqn": "helper",
+      "name": "helper",
+      "params": "(a, b=2, *args, **kwargs)",
+      "signature": "def helper(a, b=2, *args, **kwargs)",
+      "start_line": "37"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "function",
+    "content": "async def main() -\u003e None:\n    await Service.make().fetch(\"u\")",
+    "metadata": {
+      "end_line": "42",
+      "fqn": "main",
+      "modifiers": "async",
+      "name": "main",
+      "params": "()",
+      "return_type": "None",
+      "signature": "async def main() -\u003e None",
+      "start_line": "41"
+    }
+  },
+  {
+    "file_path": "src/all.py",
+    "type": "statement",
+    "content": "if __name__ == \"__main__\":\n    main()",
+    "metadata": {
+      "end_line": "46",
+      "name": "statements",
+      "start_line": "45"
+    }
+  }
+]
